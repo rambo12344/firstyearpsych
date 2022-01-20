@@ -117,19 +117,19 @@ function orientatin(){
     }
   } 
   console.log(final_answer);
-  if(trial_num == 1 && question_number == 3){
+  if(trial_num == 1 && question_number == 5){
     trial_num = 0;
     slide2();
     question_number = 0;
     final_answer = [['id', 'accuracy', 'word_color', 'word', 'given_answer', 'time(ms)', 'control?']];
     alert("you finished orientation");
   
-  } else if (trial_num == 2 && question_number == 5){
+  } else if (trial_num == 2 && question_number == 10){
     trial_num = 0;
     slide3();
     alert("you finished the first set")
     
-  } else if (trial_num == 3 && question_number == 10){
+  } else if (trial_num == 3 && question_number == 20){
       trial_num= 0;
       finish();
       alert("You finished this lab!");
