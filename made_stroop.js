@@ -39,9 +39,6 @@ function voice_input(text_color, tex){
     /// need a recognition.start event activator
     if (trial_num > 0){
         recognition.start();
-        var timenow = Date.now();
-        var t = timenow.toString();
-        localStorage.setItem('a',t);
     } else {
         alert("error has occurred, please restart the trial if possible")
     }
@@ -99,6 +96,9 @@ function orientatin(){
   $("body").append(add_exp);
   console.log(word, group_select);
   add_exp.style.color = color;
+  var timenow = Date.now();
+  var t = timenow.toString();
+  localStorage.setItem('a',t);
   if(trial_num ==1 || trial_num == 2){
     add_exp.style.letterSpacing = "5px";
     
